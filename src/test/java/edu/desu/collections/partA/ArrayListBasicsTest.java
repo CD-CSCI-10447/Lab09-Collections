@@ -43,6 +43,13 @@ public class ArrayListBasicsTest {
     }
 
     @Test
+    public void testAddElements2() {
+        ArrayList<Integer> list = basics.createArrayList();
+        basics.addElements(list, 1, 2, 3, 4, 5, 8);
+        assertEquals(6, list.size());
+    }
+
+    @Test
     public void testRemoveElement() {
         ArrayList<Integer> list = basics.createArrayList();
         basics.addElements(list, 1, 2, 3, 4, 5);
