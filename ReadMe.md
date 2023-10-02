@@ -1,4 +1,11 @@
+# Getting Started 
+
+* [Watch ArrayList](https://www.youtube.com/watch?v=1nRj4ALuw7A)
+* [Watch Maps](https://www.youtube.com/watch?v=0dR-YAFFg6I)
+* [Watch Generics](https://www.youtube.com/watch?v=jUcAyZ5OUm0)
+
 # Part A
+
 
 ## Exploring ArrayLists in Java with Unit Testing
 
