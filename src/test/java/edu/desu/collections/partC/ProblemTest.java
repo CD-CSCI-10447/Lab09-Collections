@@ -6,29 +6,35 @@ import org.junit.jupiter.api.Test;
 public class ProblemTest {
 
     @Test
-    public void countDuplicatesTest01() {
-        Problem problem = new Problem();
-        String data = "abcdefga";
-        int expected = 1;
-        int actual = problem.countDuplicates(data);
+    public void characterReplacementTest01(){
+        String  s = "ABAB";
+        int k = 2;
+
+        int expected = 4;
+        int actual = Problem.characterReplacement(s,k);
+
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    public void countDuplicatesTest02() {
-        Problem problem = new Problem();
-        String data = "aabbc";
+    public void characterReplacementTest02(){
+        String  s = "AABABBA";
+        int k = 1;
+
+        int expected = 4;
+        int actual = Problem.characterReplacement(s,k);
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void characterReplacementTest03(){
+        String  s = "ABCDEFG";
+        int k = 1;
+
         int expected = 2;
-        int actual = problem.countDuplicates(data);
-        Assertions.assertEquals(expected, actual);
-    }
+        int actual = Problem.characterReplacement(s,k);
 
-    @Test
-    public void countDuplicatesTest03() {
-        Problem problem = new Problem();
-        String data = "xyzxyzxyz";
-        int expected = 3;
-        int actual = problem.countDuplicates(data);
         Assertions.assertEquals(expected, actual);
     }
 }

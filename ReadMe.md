@@ -108,28 +108,31 @@ Maps are a pivotal data structure in many real-world applications. From database
 
 # Part C 
 
-## Count Duplicates Challenge 🧩
+## Longest Repeating Character Challenge 🎯
 
 ### Introduction:
-Sometimes, we come across situations where we have to count things that repeat. Think of it like going through a box of colored marbles and counting how many times each color repeats more than once.
+Imagine you have a box of letters and you are allowed to replace some of them to form the longest string of the same letter. It's like changing out mismatched socks from a drawer to get as many matching pairs as you can.
 
-In this challenge, you have to do something similar, but with characters in a string!
+In this challenge, you have a string and a limited number of replacements. Your task is to figure out the maximum length of a substring with the same letters after making those replacements.
 
 ### The Challenge:
-Given a string called `data`, your task is to count the number of characters that appear more than once. These characters are considered 'duplicates'.
+You're given a string `s` and an integer `k`. You can choose any character in the string and change it to any other uppercase English character, but you can perform this operation no more than `k` times.
 
-For example:
+Find out the length of the longest substring of repeated letters you can achieve after making the allowed replacements.
 
-If `data` is `"abcdefga"`, you should return the value of `1`. Why? Because the character `a` is the only one that repeats.
+For instance:
 
-If `data` is `"xyzxyzxyz"`, you should return the value of `3`. That's because the characters `x`, `y`, and `z` all repeat multiple times.
+If `s` is `"ABAB"` and `k` is `2`, you should return `4`. How come? You can replace the two 'A's with 'B's (or the other way round) to have "BBBB".
+
+Similarly, if `s` is `"AABABBA"` and `k` is `1`, the answer would be `4`. This is because changing the 'A' in the middle to 'B' gets you "AABBBBA". The substring "BBBB" is the longest series of repeating letters.
 
 ### Hints 🚀:
-If you're not sure where to start, think about how a map (or dictionary in some languages) works. It can store items with a unique key and a value. For this challenge, a `Map` can be extremely helpful. You can use characters as the unique keys and their count (number of times they appear) as values.
+Still pondering over the solution? A hint for you: a sliding window approach combined with a frequency counter (like a `Map` in many programming languages) can be handy here. You'd keep track of the number of times each letter appears as you slide through the string.
 
 ### How to get started 🏁:
-1. Look at the `Problem` class provided in the `com.codedifferently` package. There's a method named `countDuplicates` which takes the string `data` as its parameter.
-2. Fill in the logic in this method to solve the problem. Make sure it returns the correct count for the test cases.
-3. Test your solution against the given tests in the `ProblemTest` class. Once all tests pass, pat yourself on the back!
+1. Check out the `Problem` class inside the `com.codedifferently` package. There's a method named `longestRepeatingCharacter` awaiting your logic.
+2. Implement the method to match the challenge's requirements and ensure the correct output for the examples.
+3. Once done, validate your solution against the tests provided in the `ProblemTest` class.
 
-Best of luck, and happy coding! 🌟
+Best of luck, and enjoy the problem-solving journey! 🎉
+

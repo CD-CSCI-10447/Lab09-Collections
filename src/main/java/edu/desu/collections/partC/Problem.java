@@ -1,7 +1,7 @@
 package edu.desu.collections.partC;
 
 public class Problem {
-    public int countDuplicates(String data){
-        return -1;
+    public static Integer characterReplacement(String s, int k){
+        return null;
     }
 }
